@@ -32,7 +32,7 @@ public class Main extends Application {
 
             pane.requestFocus();
 
-            primaryStage.setTitle("Main Menu");
+            primaryStage.setTitle("Calculator");
             primaryStage.getIcons().add(new Image("/images/icon.png"));
             primaryStage.setResizable(false);
             primaryStage.setScene(scene);
