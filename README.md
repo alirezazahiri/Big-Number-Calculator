@@ -8,5 +8,5 @@ and also it can calculate intagrals of phrases that contain sum of 'x^n' (power 
 
 and it also can draw the Linear functions like (ax + b)...
 
-**NOTE**  You Can Type Numbers (you are not allowed to type other stuff like "=, *, ...")
+> **_NOTE:_**  You Can Type Numbers (you are not allowed to type other stuff like "=, *, ...").
 
