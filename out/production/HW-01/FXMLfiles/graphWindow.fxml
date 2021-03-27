@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="624.0" maxWidth="1018.0" minHeight="400.0" minWidth="600.0" prefHeight="624.0" prefWidth="1018.0" styleClass="root" stylesheets="@CSS/graphStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main_dir.GraphController">
+    <children>
+        <AnchorPane layoutX="-7.0" prefHeight="624.0" prefWidth="670.0">
+            <children>
+                <AreaChart fx:id="areaGraph" legendVisible="false" prefHeight="624.0" prefWidth="654.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <xAxis>
+                        <NumberAxis autoRanging="false" lowerBound="-10" side="BOTTOM" tickUnit="1" upperBound="10" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis autoRanging="false" lowerBound="-10" side="LEFT" tickUnit="1" upperBound="10" />
+                    </yAxis>
+                    <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                    </cursor>
+                </AreaChart>
+            </children>
+        </AnchorPane>
+          <VBox layoutX="662.0" layoutY="-3.0" prefHeight="624.0" prefWidth="356.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="660.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+            <Label alignment="TOP_LEFT" prefHeight="98.0" prefWidth="356.0" style="-fx-font-size: 20; -fx-text-fill: #f0f0f0;" text="add : by clicking this button you can get your function to the program to graph it!" wrapText="true" />
+            <TextField prefHeight="46.0" prefWidth="356.0" promptText="X's Coefficient" fx:id="x_coef" />
+            <TextField fx:id="constant" prefHeight="51.0" prefWidth="356.0" promptText="Constant" />
+            <Label prefHeight="278.0" prefWidth="424.0" />
+            <Button mnemonicParsing="false" onAction="#plot_function" prefHeight="71.0" prefWidth="474.0" text="add" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#handleBack" prefHeight="78.0" prefWidth="356.0" text="Back to Calculator" />
+            </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+          </VBox>
+    </children>
+</AnchorPane>
