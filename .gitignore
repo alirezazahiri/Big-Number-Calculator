@@ -1,6 +1,8 @@
-# Ignore .idea, out, HW-01.iml
-.idea/
+# Ignore .idea folder
+.idea
 
+# Ignore out folder
 out/
 
-./HW-01.iml
+# Ignore .iml files
+*.iml
