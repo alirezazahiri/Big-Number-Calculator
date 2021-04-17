@@ -1,0 +1,6 @@
+# Ignore .idea, out, HW-01.iml
+.idea
+
+out
+
+HW-01.iml
